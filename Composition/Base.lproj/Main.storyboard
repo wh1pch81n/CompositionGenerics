@@ -84,12 +84,43 @@
                     <view key="view" contentMode="scaleToFill" id="8lk-dD-BJj">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cpm-tN-GDX">
+                                <rect key="frame" x="313" y="81" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="cQB-Ca-nm3" kind="show" id="BBv-dj-D4Y"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Cpm-tN-GDX" firstAttribute="trailing" secondItem="8lk-dD-BJj" secondAttribute="trailingMargin" id="LRU-Ca-rQ1"/>
+                            <constraint firstItem="Cpm-tN-GDX" firstAttribute="top" secondItem="MWP-0m-Vfr" secondAttribute="bottom" constant="17" id="y48-FG-4Qk"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q29-2J-aTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3198" y="-146"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="K4z-QR-1VN">
+            <objects>
+                <viewController id="cQB-Ca-nm3" customClass="ViewController" customModule="Composition" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="FkW-PS-0ts"/>
+                        <viewControllerLayoutGuide type="bottom" id="cXJ-HP-ZrF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="z2P-JP-kja">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cfP-6M-xSu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3959" y="-144"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4MQ-ag-bHT">

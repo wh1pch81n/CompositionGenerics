@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 	
-	@IBOutlet var customizerObject: CustomizerVCProtocol<UIView, ViewController>! = CustomizerVCProtocol<UIView, ViewController>()
+	var customizerObject: CustomizerVCProtocol<UIView, ViewController> = CustomizerVCProtocol<UIView, ViewController>()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -42,7 +42,7 @@ public class ViewController2Customizer: CustomizerVCProtocol<UIView, ViewControl
 
 public class ViewController2: UIViewController {
 	
-	@IBOutlet var customizerObject: CustomizerVCProtocol<UIView, ViewController2>! = CustomizerVCProtocol<UIView, ViewController2>()
+	var customizerObject: CustomizerVCProtocol<UIView, ViewController2> = CustomizerVCProtocol<UIView, ViewController2>()
 	
 	override public func viewDidLoad() {
 		super.viewDidLoad()

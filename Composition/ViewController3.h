@@ -12,7 +12,7 @@
 
 @interface ViewController3 : UIViewController
 
-@property (strong, nonatomic) IBOutlet CustomizerVCProtocol <UIView *, ViewController3 *>* customizerObject;
+@property (strong, nonatomic) CustomizerVCProtocol <UIView *, ViewController3 *>* customizerObject;
 
 @end
 

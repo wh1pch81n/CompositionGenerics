@@ -9,6 +9,12 @@
 #import "ViewController3.h"
 #import "Composition-Swift.h"
 
+@class ViewController2Customizer;
+
+@interface ViewController4Customizer : CustomizerVCProtocol <UIView *, ViewController3 *>
+
+@end
+
 @implementation ViewController3
 
 - (void)viewDidLoad {
@@ -16,6 +22,14 @@
 	
 	[_customizerObject customizeView:self.view];
 	[_customizerObject customizeViewController:self];
+	
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+	if ([segue.destinationViewController isKindOfClass:[ViewController class]]) {
+		ViewController *vc = (id)segue.destinationViewController;
+		vc.customizerObject = (id)[ViewController4Customizer new];
+	}
 }
 
 @end
@@ -28,6 +42,17 @@
 
 - (void)customizeViewController:(UIViewController *)viewController {
 	
+}
+
+@end
+
+
+
+@implementation ViewController4Customizer
+
+- (void)customizeView:(UIView *)view {
+	[view setBackgroundColor:[UIColor blueColor]];
+
 }
 
 @end
